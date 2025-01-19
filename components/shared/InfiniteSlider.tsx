@@ -6,6 +6,20 @@ import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
 import Image from 'next/image'
 
+const slides = [
+	{
+		pic: '/slider/q.jpg',
+	},
+	{
+		pic: '/slider/w.jpg',
+	},
+	{
+		pic: '/slider/e.jpg',
+	},
+	{
+		pic: '/slider/r.jpg',
+	},
+]
 export const InfiniteSlider = ({
 	classname,
 	delay = 1000,
@@ -13,27 +27,6 @@ export const InfiniteSlider = ({
 	classname?: string
 	delay?: number
 }) => {
-	const slides = [
-		{
-			pic: '/slider/1.jfif',
-		},
-		{
-			pic: '/slider/2.jfif',
-		},
-		{
-			pic: '/slider/3.jfif',
-		},
-		{
-			pic: '/slider/4.jfif',
-		},
-		{
-			pic: '/slider/5.jfif',
-		},
-		{
-			pic: '/slider/6.jfif',
-		},
-	]
-
 	return (
 		<div className={`w-full bg-transparent -z-50 blur-md  ${classname}`}>
 			<a
