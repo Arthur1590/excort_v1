@@ -89,7 +89,7 @@ export const Logo = ({ className }: SvgIcons) => {
 				<rect width='182' height='69' fill='url(#pattern0)' />
 			</mask>
 			<g mask='url(#mask0_624_14305)'>
-				<rect width='182' height='69' fill='currentColor' />
+				<rect width='182' height='69' fill='#fff' />
 			</g>
 			<defs>
 				<pattern

@@ -38,7 +38,7 @@ export default async function RootLayout({
 	return (
 		<html lang={locale} suppressHydrationWarning>
 			<body
-				className={`${railway.className} antialiased min-h-svh w-full overflow-x-hidden text-primary`}
+				className={`${railway.className} antialiased min-h-svh w-full overflow-hidden text-primary`}
 			>
 				<NextIntlClientProvider messages={messages}>
 					<Theme_Provider
@@ -49,7 +49,7 @@ export default async function RootLayout({
 					>
 						<div className='relative min-h-svh w-full flex flex-col justify-between'>
 							<Header />
-							<main className='flex-1 '>{children}</main>
+							<main className='flex-1 flex flex-col justify-center'>{children}</main>
 						</div>
 					</Theme_Provider>
 				</NextIntlClientProvider>
