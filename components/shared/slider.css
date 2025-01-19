@@ -1,0 +1,36 @@
+.conveyor-container {
+  position: relative;
+  overflow: hidden; /* Скрыть всё, что выходит за границы */
+  width: 100%; /* Ширина контейнера */
+  height: 100px; /* Высота контейнера */
+  background: #f4f4f4; /* Фон для визуализации */
+  border: 2px solid #ddd; /* Граница */
+}
+
+.conveyor {
+  display: flex;
+  gap: 20px; /* Расстояние между иконками */
+  animation: move 10s linear infinite; /* Бесконечная анимация */
+}
+
+.icon {
+  font-size: 2rem; /* Размер иконок */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация движения */
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
